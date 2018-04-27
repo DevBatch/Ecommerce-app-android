@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.crystal.crystalpreloaders.widgets.CrystalPreloader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:crs_pl_bg_color="#FFFF00"
+    app:crs_pl_fg_color="@color/color_selector_normal"
+    app:crs_pl_size="extra_large"
+    app:crs_pl_style="time_machine"/>
+

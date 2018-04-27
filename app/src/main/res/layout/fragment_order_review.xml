@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_grey_200"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/color_selector_pressed"
+            android:layout_weight="1"
+            android:hint="Product"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_primary_medium" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:gravity="start"
+            android:hint="Quantity"
+            android:textColorHint="@color/color_selector_pressed"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_primary_medium" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:textColorHint="@color/color_selector_pressed"
+            android:gravity="start"
+            android:hint="Price"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_primary_medium" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec_view"
+        android:background="@color/White"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tag_layout2">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/tag_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_200"
+        android:gravity="center"
+        android:layout_above="@+id/footer_layout"
+        android:orientation="horizontal">
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/color_selector_pressed"
+            android:layout_weight="0.2"
+            android:hint="Summary"
+            android:textAlignment="center"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_primary_medium" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="start"
+            android:hint="Quantity"
+            android:textAlignment="center"
+            android:textColorHint="@color/color_selector_pressed"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_primary_medium" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:id="@+id/textVwiew3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:textColorHint="@color/color_selector_pressed"
+            android:hint="Price"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_primary_medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.14"
+            android:gravity="start"
+            android:hint="TOTAL"
+            android:padding="@dimen/padding"
+            android:textColorHint="@color/color_selector_pressed"
+            android:textSize="@dimen/text_primary_medium"
+            android:id="@+id/textView4" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.2"
+            android:gravity="start"
+            android:hint="TAX"
+            android:padding="@dimen/padding"
+            android:textColorHint="@color/color_selector_pressed"
+            android:textSize="@dimen/text_primary_medium" />
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.2"
+            android:gravity="start"
+            android:hint="TIP"
+            android:padding="@dimen/padding"
+            android:textColorHint="@color/color_selector_pressed"
+            android:textSize="@dimen/text_primary_medium" />
+        <com.devbatch.ecommerce.widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding"
+            android:layout_weight="0.2"
+            android:gravity="start"
+            android:hint="GRAND TOTAL"
+            android:padding="@dimen/padding"
+            android:textColorHint="@color/color_selector_pressed"
+            android:textSize="@dimen/text_primary_medium" />
+    </LinearLayout>
+
+</RelativeLayout>

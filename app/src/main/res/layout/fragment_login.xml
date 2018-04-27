@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+            <com.devbatch.ecommerce.widgets.AspectLockedImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="16dp"
+                android:src="@drawable/logo"
+                app:aspectRatio="3" />
+
+            <com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout">
+
+                <com.devbatch.ecommerce.widgets.EditText
+                    android:id="@+id/email"
+                    style="@style/Widget.App.EditText.Email"
+                    android:imeOptions="actionNext"/>
+            </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+            <com.devbatch.ecommerce.widgets.TextInputLayout
+                style="@style/Widget.App.TextInputLayout"
+                app:passwordToggleTint="@color/selector_color_pressed">
+
+                <com.devbatch.ecommerce.widgets.EditText
+                    android:id="@+id/password"
+                    style="@style/Widget.App.EditText.TextPassword"
+                    android:imeOptions="actionDone"/>
+            </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+            <com.devbatch.ecommerce.widgets.PathwayButton
+                android:id="@+id/login"
+                style="@style/Widget.App.Button.Login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_lager"
+                android:text="@string/log_in" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColorsSecondary"
+            android:hint="@string/forgot_password" />
+
+        <com.devbatch.ecommerce.widgets.TextView
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColorsSecondary"
+            android:hint="@string/login_signup_txt" />
+    </LinearLayout>
+
+
+</RelativeLayout>

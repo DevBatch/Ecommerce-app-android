@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/elevationLow"
+    app:cardElevation="@dimen/elevationMedium"
+    app:cardMaxElevation="@dimen/elevationMedium"
+    app:contentPaddingBottom="@dimen/margin_smaller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.devbatch.ecommerce.widgets.SquaredImage
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/pizza_demo_img"
+            android:text="@string/prod_title"
+            android:padding="@dimen/padding_smaller"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin">
+
+            <com.devbatch.ecommerce.widgets.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/prod_title"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_secondary_normal" />
+
+            <com.devbatch.ecommerce.widgets.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prod_description"
+                android:textColor="@color/md_grey_800"
+                android:paddingTop="@dimen/elevationMedium"
+                android:textSize="@dimen/text_primary_normal" />
+
+            <com.devbatch.ecommerce.widgets.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/your_prod_price"
+                android:textColor="@color/md_blue_400"
+                android:textSize="@dimen/text_primary_normal" />
+
+            <com.devbatch.ecommerce.widgets.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/your_prod_price"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/text_primary_normal" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

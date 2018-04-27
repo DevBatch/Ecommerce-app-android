@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <com.devbatch.ecommerce.widgets.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/text_primary_medium"
+        android:layout_marginBottom="@dimen/padding"
+        android:hint="@string/ur_adr_lbl"
+        android:padding="@dimen/padding" />
+    <!--<com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout">-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <com.devbatch.ecommerce.widgets.ChompProgressImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:src="@drawable/flag_mk"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/country_arrays" />
+
+
+</LinearLayout>
+    <com.devbatch.ecommerce.widgets.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/text_primary_medium"
+        android:layout_marginBottom="@dimen/padding"
+        android:hint="@string/urInfo_lbl"
+        android:padding="12dp" />
+    <com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout"
+        android:layout_height="wrap_content">
+
+        <com.devbatch.ecommerce.widgets.EditText
+            android:id="@+id/firstName"
+            style="@style/Widget.App.EditText.Login"
+            android:hint="@string/first_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/margin"
+            />
+    </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+    <com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout">
+
+        <com.devbatch.ecommerce.widgets.EditText
+            android:id="@+id/lastName"
+            style="@style/Widget.App.EditText.Login"
+            android:hint="@string/last_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/margin"
+            />
+    </com.devbatch.ecommerce.widgets.TextInputLayout>
+    <com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout">
+
+        <com.devbatch.ecommerce.widgets.EditText
+            android:id="@+id/checkout_email"
+            style="@style/Widget.App.EditText.Login"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:padding="@dimen/padding"
+            android:layout_marginLeft="@dimen/margin"
+            />
+    </com.devbatch.ecommerce.widgets.TextInputLayout>
+    <com.devbatch.ecommerce.widgets.TextInputLayout style="@style/Widget.App.TextInputLayout">
+
+        <com.devbatch.ecommerce.widgets.EditText
+            android:id="@+id/checkout_phone"
+            style="@style/Widget.App.EditText.Login"
+            android:hint="@string/callback_phone_lbl"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/padding"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="@dimen/margin"
+            />
+    </com.devbatch.ecommerce.widgets.TextInputLayout>
+    <com.devbatch.ecommerce.widgets.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColorHint="@color/White"
+        android:textSize="@dimen/text_primary_medium"
+        android:layout_marginBottom="@dimen/padding"
+        android:hint="@string/paymentOption_lbl"
+        android:padding="12dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content"
+
+        android:entries="@array/country_arrays" />
+    <com.devbatch.ecommerce.widgets.PathwayButton
+        android:id="@+id/signUp"
+        style="@style/Widget.App.Button.Login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/contunue_btn" />
+
+</LinearLayout>
+    </ScrollView>

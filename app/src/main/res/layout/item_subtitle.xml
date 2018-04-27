@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devbatch.ecommerce.widgets.TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subTitle"
+    style="@style/Widget.App.TextView.SubTitle"
+    android:layout_gravity="top"
+    android:maxLines="2"
+    />
+

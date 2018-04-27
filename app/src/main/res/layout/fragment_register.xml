@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding"
+        android:paddingRight="@dimen/padding">
+
+        <com.devbatch.ecommerce.widgets.AspectLockedImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_large"
+            android:src="@drawable/logo"
+            app:aspectRatio="3"/>
+
+        <com.devbatch.ecommerce.widgets.TextInputLayout
+            android:id="@+id/firstNameWrapper"
+            style="@style/Widget.App.TextInputLayout"
+            app:counterEnabled="false"
+            app:counterMaxLength="20"
+            >
+
+            <com.devbatch.ecommerce.widgets.EditText
+                android:id="@+id/firstName"
+                style="@style/Widget.App.EditText.Login"
+                android:hint="@string/first_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingTop="@dimen/padding_small"/>
+        </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        <com.devbatch.ecommerce.widgets.TextInputLayout
+            android:id="@+id/lastNameWrapper"
+            style="@style/Widget.App.TextInputLayout"
+            app:counterEnabled="false"
+            app:counterMaxLength="20">
+
+            <com.devbatch.ecommerce.widgets.EditText
+                android:id="@+id/lastName"
+                style="@style/Widget.App.EditText.Login"
+                android:hint="@string/last_name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:paddingTop="@dimen/padding_small"/>
+        </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.devbatch.ecommerce.widgets.TextInputLayout
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_weight=".5">
+
+                <com.devbatch.ecommerce.widgets.NoMenuEditText
+                    android:id="@+id/code"
+                    style="@style/Widget.App.EditText.Login"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/mobile_number"/>
+            </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+            <com.devbatch.ecommerce.widgets.TextInputLayout
+                style="@style/Widget.App.TextInputLayout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:counterEnabled="false"
+                app:counterMaxLength="10">
+
+                <com.devbatch.ecommerce.widgets.EditText
+                    android:id="@+id/mobile"
+                    style="@style/Widget.App.EditText.Login"
+                    android:hint=" "
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    tools:ignore="HardcodedText"/>
+            </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.devbatch.ecommerce.widgets.TextInputLayout
+            android:id="@+id/emailWrapper"
+            style="@style/Widget.App.TextInputLayout"
+            app:counterEnabled="false"
+            app:counterMaxLength="20">
+
+            <com.devbatch.ecommerce.widgets.EditText
+                android:id="@+id/email"
+                style="@style/Widget.App.EditText.Login"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:paddingTop="@dimen/padding_small"/>
+        </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        <com.devbatch.ecommerce.widgets.TextInputLayout
+            android:id="@+id/passwordWrapper"
+            style="@style/Widget.App.TextInputLayout"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/selector_color_pressed"
+            >
+
+            <com.devbatch.ecommerce.widgets.EditText
+                android:id="@+id/password"
+                style="@style/Widget.App.EditText.TextPassword"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:paddingTop="@dimen/padding_small"/>
+        </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        <com.devbatch.ecommerce.widgets.TextInputLayout
+            android:id="@+id/confirmPasswordWrapper"
+            style="@style/Widget.App.TextInputLayout"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/selector_color_pressed">
+
+            <com.devbatch.ecommerce.widgets.EditText
+                android:id="@+id/confirmPassword"
+                style="@style/Widget.App.EditText.TextPassword"
+                android:hint="@string/confirm_password"
+                android:imeOptions="actionDone"
+                android:paddingTop="@dimen/padding_small"/>
+        </com.devbatch.ecommerce.widgets.TextInputLayout>
+
+        <com.devbatch.ecommerce.widgets.PathwayButton
+            android:id="@+id/signUp"
+            style="@style/Widget.App.Button.Login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/sign_up"/>
+
+
+    </LinearLayout>
+</ScrollView>

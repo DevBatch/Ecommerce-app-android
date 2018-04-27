@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AspectLockedImageView">
+        <attr name="aspectRatio" format="float|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SquaredImage">
+        <attr name="useHeight" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateView">
+        <attr name="msv_loadingView" format="reference" />
+        <attr name="msv_emptyView" format="reference" />
+        <attr name="msv_errorView" format="reference" />
+        <attr name="msv_rotate_loading_view" format="boolean" />
+        <attr name="msv_viewState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="error" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="loading" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ChompProgressView">
+        <attr name="biteRadius" format="dimension"/>
+        <attr name="chompProgress" format="integer"/>
+        <attr name="chompMax" format="integer"/>
+        <attr name="chompDirection" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="180"/>
+            <enum name="right" value="90"/>
+            <enum name="left" value="270"/>
+            <enum name="top_right" value="45"/>
+            <enum name="top_left" value="315"/>
+            <enum name="bottom_right" value="135"/>
+            <enum name="bottom_left" value="225"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="EditRow">
+        <attr name="circlecolor" format="color"/>
+        <attr name="leftBorder" format="color"/>
+    </declare-styleable>
+    <!-- text view font -->
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="core_area">
+        <attr name="underline_color"
+              format="color"/>
+        <attr name="underline_selected_color"
+              format="color"/>
+        <attr name="hint_color"
+              format="color"/>
+        <attr name="text_color"
+              format="color"/>
+        <attr name="hint_text"
+              format="string"/>
+        <attr name="codes"
+              format="integer"/>
+        <attr name="underlineWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SubmitButton">
+        <attr name="sub_btn_background" format="color" />
+        <attr name="sub_btn_tick_color" format="color" />
+        <attr name="sub_btn_line_color" format="color" />
+        <attr name="sub_btn_ripple_color" format="color" />
+        <attr name="sub_btn_duration" format="integer" />
+    </declare-styleable>
+
+</resources>
